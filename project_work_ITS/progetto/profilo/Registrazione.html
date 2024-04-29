@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Registrazione</title><br>
+        <h1>Registrazione</h1>
+        <link rel="stylesheet" href="../css.css">
+    </head>
+    <body>
+        <div class="divTesto">
+            <div class="topnav">
+                <a href="../index.php">Home</a>
+                <a class = "active" style = "float: right" href="../profilo/Profilo.php">Accedi</a>
+                <a style = "float: right" href="../Info.html">Info</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Province</button>
+                    <div class="dropdown-content">
+                        <a href="../Bergamo/Bergamo.php">Bergamo</a>
+                        <a href="../Brescia/Brescia.php">Brescia</a>
+                        <a href="../Lecco_Como/Lecco-Como.php">Lecco Como</a>
+                        <a href="../Sondrio/Sondrio.php">Sondrio</a>
+                    </div>
+                </div>
+                <a style = "float: right" href="../Home.php">Attrezzatura</a>
+            </div>
+            <div class="divProfilo" style="margin: auto;"><br><br>  <center>
+                <div class="sezione_accesso">
+                    <form method="post" action="Registrazione.php">
+                        <br>
+                        Nome: <br>
+                        <input type="text" id="nome" placeholder="Nome" name="nome" class = "input_credenziali" required><br><br>
+                        Cognome: <br>
+                        <input type="text" id="cognome" placeholder="Cognome" name="cognome" class = "input_credenziali" required><br><br>
+                        Nome utente: <br>
+                        <input type="text" id="username" placeholder="Nome utente" name="username" class = "input_credenziali" maxlength="50" required><br><br>
+                        Password: <br>
+                        <input type="password" id="password" placeholder="Password" name="password" class = "input_credenziali" required><br><br>
+                        <button type="submit" name="register" class = "submit" style="text-align: center;">Registrati</button>
+                    </form>
+                    <form action="Profilo.php">
+                        Torna indietro:<br><br>
+                        <input type="submit" id="submit" value="Torna alla pagina del profilo" class = "submit_ritorno" style="text-align: center;">
+                    </form>
+                </div></center>
+            </div>
+            <a href="../index.php"><img src="../immagini/freccia.png" width=60 height=60></a></li>
+        </div>
+    </body>
+</html>
